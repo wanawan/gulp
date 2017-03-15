@@ -1,0 +1,13 @@
+@charset "utf-8";
+//只会出现在.less文件中的注释
+/*会出现在.less、.css文件中的注释*/
+@value:242px;//创建一个变量并赋值
+body{
+	margin:0px;
+	font-size:14px;
+}
+div{
+    background:#f90;
+    width:@value;//使用变量
+    height:@value;//使用变量
+}

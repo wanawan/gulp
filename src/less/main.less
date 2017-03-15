@@ -1,0 +1,27 @@
+@charset "utf-8";
+/*体现less强大之处*/
+@size:200px;
+.border_radius(@radius:50px){
+    -webkit-border-radius:@radius;
+    -moz-border-radius:@radius;
+    border-radius:@radius;
+}
+.border_01(@border_width:10px;){
+    border:@border_width solid #090;
+}
+#div1{
+    width:@size;
+    height:@size;
+    background:#ff0;
+    .border_01();
+    .border_radius(200px); 
+    line-height: @size;
+    text-align: center;
+    color: #f00;  
+}
+div{
+    *width:540px;
+    _height:900px;
+    filter:alpha(opacity=50);
+  
+}
